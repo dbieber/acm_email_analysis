@@ -24,31 +24,31 @@ class ACMEmailsSpider(BaseSpider):
     name = "acm_emails"
     allowed_domains = ["princeton.edu", "lists.princeton.edu"]
 
-    start_urls = [a % {"token": "1DBB7361FB10315B89"} for a in [
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1404&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1403&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1402&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1401&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1312&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1311&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1310&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1309&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1308&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1305&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1304&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1303&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1302&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1301&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1212&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1211&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1210&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1209&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1208&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1207&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1206&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1205&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1204&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu",
-        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1203&L=PrincetonACM&X=%(token)s&Y=dbieber@princeton.edu"
+    start_urls = [a % {"token": "12A1B40B94DD71F62A", "email": "dbieber@princeton.edu"} for a in [
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1404&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1403&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1402&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1401&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1312&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1311&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1310&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1309&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1308&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1305&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1304&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1303&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1302&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1301&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1212&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1211&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1210&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1209&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1208&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1207&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1206&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1205&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1204&L=PrincetonACM&X=%(token)s&Y=%(email)s",
+        "https://lists.princeton.edu/cgi-bin/wa?A1=ind1203&L=PrincetonACM&X=%(token)s&Y=%(email)s"
     ]]
 
     def parse(self, response):
