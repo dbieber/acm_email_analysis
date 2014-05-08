@@ -1,0 +1,2 @@
+Ignored by .gitignore
+Run `scrapy crawl acm_emails -o email_data/acmemails.json -t json` to populate.
