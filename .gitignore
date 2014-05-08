@@ -1,3 +1,4 @@
 *.pyc
 *~
-acmemails.json
+email_data
+.ipynb_checkpoints
